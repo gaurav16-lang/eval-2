@@ -1,0 +1,39 @@
+{
+    "jobs":[
+        {
+            "cname":"Masai",
+            "jobtitle":"fullstackdevloper",
+            "salary":"30000",
+            "job-description":"loremipsum",
+            "location":"Delhi",
+            "jobtype":"remote"
+
+        
+        },
+        {
+            "cname":"Masai",
+            "jobtitle":"fullstackdevloper",
+            "salary":"30000",
+            "job-description":"loremipsum",
+            "location":"Delhi",
+            "jobtype":"remote"
+
+        
+        }, {
+            "cname":"Masai",
+            "jobtitle":"fullstackdevloper",
+            "salary":"30000",
+            "job-description":"loremipsum",
+            "location":"Delhi",
+            "jobtype":"remote"
+
+        
+        }
+
+
+
+    ],
+    "job":[
+
+    ]
+}

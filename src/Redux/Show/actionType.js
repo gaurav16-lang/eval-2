@@ -1,0 +1,3 @@
+export const GET_SHOW_LOADING = 'GET_SHOW_LOADING'
+export const GET_SHOW_SUCCESS = 'GET_SHOW_SUCCESS'
+export const GET_SHOW_ERROR = 'GET_SHOW_ERROR'

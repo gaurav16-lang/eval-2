@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from 'react'
+import './App.css'
 function App() {
+  const [job, setJob] = useState({})
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>JOB DASHBOARD</h1>
+
+      <div className="login">
+        <form className="newt">
+          <h3>LOGIN HERE</h3>
+          <input type="text" placeholder="enetr name" />
+          <br />
+          <br />
+          <input type="text" placeholder="enter password" />
+          <br />
+          <br />
+          <button
+            onClick={() => {
+              fetch('http://loaclhost:4500/jobs')
+                .then((res) => res.json())
+                .then((res) => {
+                  setJob(res)
+                })
+            }}
+          >
+            Login
+          </button>
+        </form>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
